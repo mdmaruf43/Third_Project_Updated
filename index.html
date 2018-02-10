@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>Project_3</title>
+		<link href="https://fonts.googleapis.com/css?family=Audiowide|Nanum+Pen+Script|Pathway+Gothic+One|Share" rel="stylesheet">  
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			body{
+				margin-left: 90px;
+				margin-right: 90px;
+				background-color: #e0e0e0;
+			}
+			h1{
+				text-align: center;
+				background-color: white;
+				background: url("../image/rasturant.png");
+				font-family: 'Audiowide', cursive;
+				padding: 40px;
+				margin: 0px 0px 20px 0px;
+				font-size: 40px;
+				color: white;
+			}
+			nav.navigation{
+				padding: 5px;
+				background-color: #006064;
+				color: white;
+				opacity: .6;
+				text-align: left;
+				margin: 0px;
+			}
+			nav.navigation ul li{
+				display: inline;
+				margin: 20px;
+			}
+			nav.navigation a{
+				text-decoration: none;
+				color: white;
+
+			}
+			.navigation a:hover{
+				color: blue;
+			}
+			a{
+				text-decoration: none;
+				color: green;
+				font-size: 25px;
+				font-family: 'Nanum Pen Script', cursive;
+			}
+			a:hover{
+				color: red;
+			}
+			input{
+				width: 290px;
+				height: 45px;
+				border-radius: 4px;
+				background-color: #BDBDBD;
+				margin: 0px 0px 5px 0px;
+				border: 1px solid #EEEEEE;
+			}
+			input.submit{
+				width: 150px;
+				height: 44px;
+				color: white;
+				opacity: .7;
+				border-radius: 4px;
+				font-size: 16px;
+				background-color: black;
+			}
+			div.about{
+				float: right;
+				width: 25%;
+				margin: 0px 30px 0px 0px;
+			}
+			div.outer{
+				float: left;
+				width: 65%;
+				
+				overflow: auto;
+			}
+			div.inner1{
+				background-image: url(../image/margheritaPizza.jpg);
+				background-repeat: no-repeat;
+				border-radius: 10px;
+				width: 645px;
+				height: 350px;
+				opacity: .85;
+				position: relative;
+			}
+
+			div.inner2{
+				background: url(../image/bbqChicken.jpg);
+				background-repeat: no-repeat;
+				border-radius: 10px;
+				width: 645px;
+				height: 350px;
+				opacity: .85;
+				position: relative;
+			}
+			p.inner_p{
+				color: white;
+				width: 605px;
+				padding: 20px;
+				margin: 0px;
+				bottom: 0;
+				font-size: 18px;
+				font-family: 'Share', cursive;
+				border-radius: 10px;
+				background-color: black;
+				opacity: .56;
+				position: absolute;
+			}
+			ul li{
+				display: inline;
+				margin: 0px;
+				padding: 0px;
+			}
+			p{
+				text-align: left;
+				font-family: 'Share', cursive;
+			}
+			h2{
+				text-align: center;
+				font-family: 'Pathway Gothic One', sans-serif;
+				border-bottom: 1px dashed #424242;
+			}
+			span{
+				float: right;
+				font-size: 20px;
+			}
+			button{
+				position: center;
+				width: 150px;
+				height: 40px;
+				border: 1px solid gray;
+				border-radius: 4px;
+				background: green;
+				color: white;
+			}
+
+		</style>
+	</head>
+	<body>
+		<!--First Header--> 
+
+		<div class="first">
+			<h1>Welcome!!!<br>Awesome Restaurant</h1>
+		</div>
+
+		<!--Navigation Section-->
+		<nav class="navigation">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Deshi Food</a></li>
+				<li><a href="#">Western Food</a></li>
+				<li><a href="#">Special</a></li>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">About Us!</a></li>
+			</ul>
+		</nav>
+
+		<!--Main Division-->
+		<div class="outer">
+			<h2>Last Post</h2>
+			<div class="inner1">
+				<p class="inner_p">
+					<strong>Margherita Pizza<span>$5</span></strong><br /><small>Mozzarella,tomato sauce,oregano,fresh basil.</small>
+				</p>
+			</div><br>
+			<center><button onclick="maruf()">Do You Orderd It??</button></center><br>
+
+			<div class="inner2">
+				<p class="inner_p">
+					<strong>BBQ Chicken <span>$10</span></strong><br>
+					<small>Mozzarella,tomato sauce,BBQ chicken with caramel onion & sundried tomato.</small>
+				</p>
+			</div><br>
+			<center><button onclick="maruf()">Do You Orderd It??</button></center><br>	
+		</div>
+
+		<div class="about">
+			<center><h2>Subscribe</h2></center>
+			<p>Don't miss any kind of food updated!So, Subscribe right now to test such as delicious food with Awesome Restaurant</p>
+			<input type="text" name="text" placeholder="Email Address..."><br>
+			<input class="submit" type="submit" name="submit" value="SUBSCRIBE">
+
+			<center><h2>ABOUT THE FUNDER</h2></center>
+			<img src="../image/maruf-profile.jpg" alt="Maruf_Profile" style="width: 290px; height: 220px; float: left; border-radius: 6px;">
+			<p>Hey!!!I am maruf Ahmed. I want to be able, as day go by.</p>
+			<center><h2>CONNECT WITH ME!!!</h2></center>
+			<ul>
+				<li><a href="#">Facebook</a>|</li>
+				<li><a href="#">Twitter</a>|</li>
+				<li><a href="#">Google+</a>|</li>
+				<li><a href="#">LinkeDin</a></li>
+			</ul>
+		</div>
+		<script>
+			function maruf(){
+				alert("You order this food, Now just wating to eat!!!")
+			}
+		</script>
+	</body>
+</html>
